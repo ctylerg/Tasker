@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// require mongodb!
+require('./models/db');
+require('./models/Tasks');
+
 var routes = require('./routes/index');
 var tasks = require('./routes/tasks');
 
