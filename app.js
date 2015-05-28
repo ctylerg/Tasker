@@ -10,6 +10,10 @@ var tasks = require('./routes/tasks');
 
 var app = express();
 
+// parse the body of requests
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
