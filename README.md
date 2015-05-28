@@ -8,3 +8,13 @@ Tasker is built using the following technologies:
 - Angular.js
 - Node.js
 
+##API Access
+To access tasks, please use the *Tasker* RESTFul API!
+
+```bash
+GET     /api/tasks
+GET     /api/tasks/:id
+POST    /api/tasks
+PUT     /api/tasks/:id
+DELETE  /api/tasks/:id
+```
