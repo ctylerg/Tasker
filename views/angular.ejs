@@ -3,6 +3,8 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript"
     <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/angular.min.js"></script>
     <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
@@ -20,7 +22,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><%= title %></a>
+      <a class="navbar-brand" href="#">    <span class="glyphicon glyphicon-list-alt"></span>
+ <%= title %></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,8 +41,7 @@
 
 <article class="row">
   <div class="col-md-12">
-    <h1><%= title %>: <em>the MEAN way to track your tasks</em></h1>
-    <h4><%= library %> Version</h4>
+    <h2>My Tasks</h2>
   </div>
 </article>
 
@@ -48,9 +50,9 @@
   <div class="col-md-12">
   <ul>
     <li ng-repeat="task in tasks">
-      <span>{{task.name}}</span>
-      <p>{{task.description}}</p>
-      <p>{{'Completed: ' + task.completed}}
+      <h4><span class="glyphicon glyphicon-chevron-right"> {{task.name}}</span></h4>
+      <p><strong>Description</strong> <em>{{task.description}}</em></p>
+      <p><strong>Completed?</strong> {{task.completed}}
     </li>
   </ul>
   </div>
