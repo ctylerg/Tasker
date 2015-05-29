@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="taskerApp">
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
     <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/angular.min.js"></script>
     <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular-app.js"></script>
   </head>
   <body>
+
+    {{'AngularJS lets us ' + 'DYNAMICALY ' + 'render data on a page!'}}
 
     <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -33,17 +36,31 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-    <section class="container">
+<section class="container">
 
-      <article class="row">
-        <div class="col-md-12">
-          <h1><%= title %></h1>
-          <h4>Using <%= library %></h4>
-          <p><em>Not yet implemented!</em></p>
-        </div>
-      </div>
+<article class="row">
+  <div class="col-md-12">
+    <h1><%= title %></h1>
+    <h4>Using <%= library %></h4>
+    <p><em>Not yet implemented!</em></p>
+  </div>
+</article>
 
-    </section>
+<!-- angular TaskListCtrl -->
+<article ng-controller="TaskListCtrl">
+  <div class="col-md-12">
+  <ul>
+    <li ng-repeat="task in tasks">
+      <span>{{task.name}}</span>
+      <p>{{task.description}}</p>
+      <p>{{'Completed: ' + task.completed}}
+    </li>
+  </ul>
+  </div>
+</article>
+
+<!-- end angular TaskListCtrl -->
+</section>
 
 
   </body>
