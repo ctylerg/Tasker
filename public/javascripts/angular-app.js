@@ -8,9 +8,9 @@ taskerApp.controller('TaskListCtrl', function ($scope) {
     'completed': true },
     {'name': 'Reload ventra card',
     'description': 'Balance is low',
-    'completed': true },
+    'completed': false },
     {'name': 'Pick up surprise from UPS...',
     'description': 'its a secret to everyone',
-    'completed': true },
+    'completed': false },
   ];
 });
