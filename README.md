@@ -2,6 +2,8 @@
 
 The *MEAN* way to keep yourself on task!
 
+<h2> **Now GET TO WORK!**
+
 Tasker is built using the following technologies:
 - MongoDB
 - Express.js
@@ -18,3 +20,14 @@ POST    /api/tasks
 PUT     /api/tasks/:id
 DELETE  /api/tasks/:id
 ```
+#Screenshot
+![To do](/images/Doing_tasks.png)
+
+
+#Coming Soon!
+- Backbone.js Tasker
+- Login option
+
+
+#Author
+[Tyler Geneva](https://github.com/ctylerg)
