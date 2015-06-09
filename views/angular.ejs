@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -50,8 +50,8 @@
   <div class="col-md-4">
   <h1>Create Task</h1>
     <form ng-submit="createTask(name, description)">
-    <input class='form-control' type="text" ng-model="name" name="name" />
-    <input class='form-control' type="text" ng-model="description" name="description" />
+    <input class='form-control' type="text" ng-model="name" name="name" placeholder="task"/>
+    <input class='form-control' type="text" ng-model="description" name="description" placeholder="description"/>
     <input class='btn btn-primary' type="submit" id="submit" value="Submit" />
     </form>
   </div>
@@ -60,7 +60,7 @@
   <ul>
     <li ng-repeat="task in tasks">
       <h4><span class="glyphicon glyphicon-chevron-right"> {{task.name}}</span></h4>
-      <p><strong>Description</strong> <em>{{task.description}}</em></p>
+      <p><strong>Description:</strong> <em>{{task.description}}</em></p>
       <p><strong>Done?</strong> <span data-task="{{task._id}}"class="glyphicon glyphicon-ok" ng-click="completeTask(task)"></span></p>
     </li>
   </ul>
