@@ -24,6 +24,7 @@ DELETE  /api/tasks/:id
 ![To do](/images/Doing_tasks.png)
 
 
+
 #Coming Soon!
 - Backbone.js Tasker
 - Login option
