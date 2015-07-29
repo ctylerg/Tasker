@@ -34,8 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/api/tasks/', tasks);
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://heroku_v00xql14:615vrq05b4amevoo82t3dp7sbk@ds045622.mongolab.com:45622/heroku_v00xql14'); //monogolab
-app.use(express.static(__dirname + '/build'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

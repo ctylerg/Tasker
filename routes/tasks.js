@@ -9,6 +9,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Task = require('../models/Tasks');
 
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://heroku_v00xql14:615vrq05b4amevoo82t3dp7sbk@ds045622.mongolab.com:45622/heroku_v00xql14'); //monogolab
+app.use(express.static(__dirname + '/build'));
 
 /* GET /api/tasks listing. */
 router.get('/', function(req, res, next) {
