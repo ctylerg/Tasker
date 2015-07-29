@@ -30,5 +30,5 @@ DELETE  /api/tasks/:id
 - Login option
 
 
-#Author
-[Tyler Geneva](https://github.com/ctylerg)
+  #Author
+  [Tyler Geneva](https://github.com/ctylerg)
